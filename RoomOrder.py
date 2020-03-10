@@ -7,10 +7,7 @@ small_rooms = {"013": "1", "014": "4",
                "015": "5", "016": "6"}
 medium_rooms = {"018": "7", "019": "8"}
 big_rooms = {"101": "2", "107": "3"}
-times = ["08:00:00", "09:00:00"]
-more_times = [str(i)+":00:00" for i in range(10, 23)]
-for time in more_times:
-        times.append(time)
+times = ["08:00:00", "09:00:00"] + [str(i)+":00:00" for i in range(10, 23)]
 date = "2020-01-12"  # change dynamically to desired date (every tuesday for example)
 sd = date + " " + times[0]
 ed = date + " " + times[1]
